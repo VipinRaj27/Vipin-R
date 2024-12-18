@@ -3691,7 +3691,6 @@ body {
 }
 .banner-content {
   width: 1440px;
-  height: 300px;
   display:flex;
 }
 /* Banner images */
@@ -3700,20 +3699,19 @@ body {
   max-width: 1440px;
   height: auto;
  @media only screen and (max-width: 550px) {
-    margin-top: 157px;
-    margin-left: -140px;
-    width: 686px;
-    height: 264px;
-}
+  margin-top: 157px;
+  margin-left: -140px;
+  width: 686px;
+  height: 264px;
   }
-    
+}  
 
 .smallbannerimage {
   width: 550px;
   height: 300px;
   /* padding-right: 100px; */
   @media only screen and (max-width: 550px) {
-   display:none;
+    display:none;
   }
   @media (min-width: 1024px) {
       width: 800px;
