@@ -3595,3 +3595,254 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+/* Base styles */
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Header styling */
+.header1 {
+  width: 100%;
+  max-width: 1440px;
+  height: 64px;
+  padding: 10px 50px;
+  gap: 150px;
+  display: flex;
+  background-color: #f5f5f5;
+   @media only screen and (max-width: 550px) {
+     max-width: 375px;
+     gap:0px;
+         justify-items: center;
+  display: block;
+     
+  }
+}
+
+
+
+.brand-name {
+  font-size:17px;
+  font-weight: bold;
+  height: 19px;
+  width:350px;
+   @media only screen and (max-width: 550px) {
+    width: 151px;
+  }
+    
+}
+
+.tagline {
+  width:500px;
+    height: 20px;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 15px;
+  line-height: 13.42px;
+  font-family: 'Jost';
+  
+   @media only screen and (max-width: 550px) {
+   display:none;
+  }
+}
+
+/* CTA Button */
+.cta-button {
+  background-color: #ffdd00;
+  position: relative;
+  width: 207px;
+  height: 44px;
+  border: none;
+  font-size: 16px;
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+  color: #000;
+  overflow: hidden;
+  cursor: pointer;
+  
+   @media only screen and (max-width: 550px) {
+   display:none;
+  }
+}
+
+.cta-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  transition: left 0.5s ease;
+}
+
+.cta-button:hover::before {
+  left: 0;
+}
+
+.cta-button:hover {
+  color: white;
+}
+
+.cta-button span {
+  position: relative;
+  z-index: 1;
+}
+.banner-content {
+  width: 1440px;
+  height: 300px;
+  display:flex;
+}
+/* Banner images */
+.largebannerimage {
+  width: 100%;
+  max-width: 1440px;
+  height: auto;
+ @media only screen and (max-width: 550px) {
+    margin-top: 157px;
+    margin-left: -140px;
+    width: 686px;
+    height: 264px;
+}
+  }
+    
+
+.smallbannerimage {
+  width: 550px;
+  height: 300px;
+  /* padding-right: 100px; */
+  @media only screen and (max-width: 550px) {
+   display:none;
+  }
+  @media (min-width: 1024px) {
+      width: 800px;
+    height: 300px;
+  }
+}
+.mobiledescription{
+  display:none;
+
+    @media only screen and (max-width: 550px) {
+     display:block;
+      margin-top: 18px;
+    /* text-align: center; */
+    font-size: 14px;
+    line-height: 20.8px;
+    text-align: center;
+    width: 298px;
+    height: 42px;
+  }
+}
+/* Description section */
+.descriptiondiv {
+  width: 380px;
+  height: 300px;
+  margin-left: 50px;
+
+  @media only screen and (max-width: 550px) {
+    width: auto;
+    height: auto;
+  margin-left: 38px;
+    
+  }
+     
+  
+}
+
+.headline {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 70px;
+  margin-top: 20px;
+   @media only screen and (max-width: 550px) {
+    margin-top: -410px;
+         font-size: 28px;
+    line-height: 30px;
+    font-weight: 500;
+    /* width: 197px; */
+    height: 30px;
+}
+  @media (min-width: 768px) {
+  font-size: 40px;
+  
+  }
+}
+
+.description {
+  margin-top: 28px;
+  font-size: 14px;
+  line-height: 28px;
+    @media only screen and (max-width: 550px) {
+     display:none;
+  }
+}
+
+/* Shop Now Button */
+.shopnowbutton {
+  position: relative;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: 'Jost', sans-serif;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 35px;
+  overflow: hidden;
+  transform: uppercase;
+ @media only screen and (max-width: 550px) {
+      margin-top: 220px;
+  }
+  @media (min-width: 768px) {
+    margin-top: 20px;
+  }
+}
+
+.shopnowbutton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: yellow;
+  transition: left 0.5s ease;
+}
+
+.shopnowbutton:hover::before {
+  left: 0;
+}
+
+.shopnowbutton:hover {
+  color: black;
+}
+
+.shopnowbutton span {
+  position: relative;
+  z-index: 1;
+}
+
+/* Footer note */
+.footer-note {
+  width: 100%;
+  max-width: 1440px;
+  text-align: center;
+  background-color: #f5f5f5;
+  padding: 10px 50px;
+  @media only screen and (max-width: 550px) {
+     display:none;
+  }
+}
+
+.footer-note_mobile{
+    width: 100%;
+  display:none;
+  max-width: 1440px;
+  text-align: center;
+  background-color: #f5f5f5;
+  padding: 10px 50px;
+  @media only screen and (max-width: 550px) {
+    display:block;
+  }
+}
