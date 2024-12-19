@@ -1,0 +1,95 @@
+<!-- Banner Gift Guide Section -->
+<div class="gift-guide-banner">
+  <div class="container1">
+    <div class="header1">
+      <div class="brand-name">{{ section.settings.brand_name }}</div>
+      <div class="tagline">{{ section.settings.tagline }}</div>
+      <div class="cta-buttondiv">
+        <button class="cta-button"><span>{{ section.settings.cta_text }}</span></button>
+      </div>
+    </div>
+    <div class="content">
+      <div class="banner">
+        <img src="{{ section.settings.large_banner_image | img_url: 'master' }}" alt="Banner Image" class="largebannerimage">
+      </div>    
+      <div class="banner-content">
+        <div class="descriptiondiv">
+          <div class="headline">{{ section.settings.headline }}</div>
+          <div class="description">{{ section.settings.description }}</div>
+          <div class='mobiledescription'>Discover Joy: Your Ultimate Holiday Gift Destination.</div>
+          <div>
+            <button class="shopnowbutton"><span>{{ section.settings.shop_now_text }}</span></button>
+          </div>
+        </div>
+        <img src="{{ section.settings.small_banner_image | img_url: 'master' }}" alt="Banner Image" class="smallbannerimage">
+      </div>
+    </div>
+  </div>
+  <div class="footer-note">{{ section.settings.footer_note }}</div>
+   <div class="footer-note_mobile">SUSTAINABLE, ETHICALLY MADE ACTIVEWEAR</div>
+</div>
+
+{% schema %}
+{
+  "name": "Gift Guide Banner",
+  "settings": [
+    {
+      "type": "text",
+      "id": "brand_name",
+      "label": "Brand Name",
+      "default": "TISSO VISON"
+    },
+    {
+      "type": "text",
+      "id": "tagline",
+      "label": "Tagline",
+      "default": "Find the ideal gift for your loved ones."
+    },
+    {
+      "type": "image_picker",
+      "id": "large_banner_image",
+      "label": "Large Banner Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "small_banner_image",
+      "label": "Small Banner Image"
+    },
+    {
+      "type": "text",
+      "id": "headline",
+      "label": "Headline",
+      "default": "The Gift Guide"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season."
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA Button Text",
+      "default": "CHOOSE GIFT →"
+    },
+    {
+      "type": "text",
+      "id": "shop_now_text",
+      "label": "Shop Now Button Text",
+      "default": "SHOP NOW →"
+    },
+    {
+      "type": "text",
+      "id": "footer_note",
+      "label": "Footer Note",
+      "default": "SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Gift Guide Banner",
+    }
+  ]
+}
+{% endschema %}
